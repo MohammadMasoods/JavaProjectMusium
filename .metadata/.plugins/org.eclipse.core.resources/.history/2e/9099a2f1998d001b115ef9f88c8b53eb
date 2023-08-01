@@ -1,0 +1,23 @@
+
+public enum Tickettype {
+	
+	
+	DAILY,MONTHLY,YEARLY;
+	double prise ;
+	Tickettype(){
+		
+		
+		
+	}
+	public double getPrise() {
+		return prise;
+	}
+	public void setPrise(double prise) {
+		this.prise = prise;
+	}
+	
+	
+	
+	
+	
+}

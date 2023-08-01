@@ -1,0 +1,31 @@
+
+public class OneTimeTecket extends Ticket {
+
+     double prise;
+      Guide G;
+	public double getPrise() {
+		return prise;
+	}
+
+	public void setPrise(double prise) {
+		this.prise = prise;
+	}
+
+	public OneTimeTecket(double prise) {
+		
+		this.prise = prise;
+	}
+	OneTimeTecket (){
+		
+		G=new Guide();
+	}
+
+	public Guide getG() {
+		return G;
+	}
+
+	public void setG(Guide g) {
+		G = g;
+	}
+	
+}

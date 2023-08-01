@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class SeniorVistor extends Visitor {
+double DiscountRate;
+int age;
+	SeniorVistor(String Name, String address, int ID, String NOT, Calendar dob, int record_id, int Num_ofVisit) {
+		super(Name, address, ID, NOT, dob, record_id, Num_ofVisit);
+	
+	}
+	SeniorVistor(){
+		
+		
+		
+	}
+	public double getDiscountRate() {
+		return DiscountRate;
+	}
+	public void setDiscountRate(double discountRate) {
+		DiscountRate = discountRate;
+	}
+public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+void booktoure() {
+	
+	
+}
+}

@@ -1,0 +1,27 @@
+import java.util.*;
+public class VisitorRecord {
+Date enteringdate;
+LocalTime enteringtime;
+
+public VisitorRecord(Date enteringdate, long enteringtime) {
+	super();
+	this.enteringdate = enteringdate;
+	this.enteringtime = enteringtime;
+}
+VisitorRecord(){
+	
+	
+}
+public Date getEnteringdate() {
+	return enteringdate;
+}
+public void setEnteringdate(Date enteringdate) {
+	this.enteringdate = enteringdate;
+}
+public long getEnteringtime() {
+	return enteringtime;
+}
+public void setEnteringtime(long l) {
+	this.enteringtime = l;
+} 
+}

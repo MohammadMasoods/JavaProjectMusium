@@ -1,0 +1,18 @@
+
+public class MultiTimeTecket {
+	Tickettype Ttype;
+   char tickitprise;
+   
+public MultiTimeTecket(Tickettype ttype, char tickitprise) {
+	super();
+	Ttype = ttype;
+	
+	this.tickitprise = tickitprise;
+}
+	
+MultiTimeTecket()
+{
+	
+}
+
+}

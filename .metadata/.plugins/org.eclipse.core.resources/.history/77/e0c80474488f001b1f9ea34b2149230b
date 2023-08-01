@@ -1,0 +1,91 @@
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.*;
+
+public class MuseumManagementSystem {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		MuseumSystem M = new MuseumSystem();
+		Reseptioniest R;
+		R = new Reseptioniest();
+		R.Database();
+		int x = 10;
+		while (x != 0) {
+			System.out.printf(R.toString());
+			x = input.nextInt();
+			switch (x) {
+			case 1:
+				Guide G1 = new Guide();
+				R.Database().Read(G1);;
+				R.Database().addGuide(G1);
+				break;
+			case 2:
+				System.out.println(" Enter Visitor id");
+				int idv6 = input.nextInt();
+				if(R.Database().availablevisitor(idv6)) {
+					System.out.println(" Visitor is already registered");
+				}
+				else {
+				Visitor Vi = new Visitor();
+				R.Database().ReadVisitor(Vi);
+				R.Database().addVisitor(Vi);
+				}
+				break;
+
+			case 3:
+				System.out.println("How can we serve ?\n1.register subs\n2.edit Subs\n3.delete subs\n4.exist");
+				int e0 = 15;
+				while (e0 != 4) {
+					e0 = input.nextInt();
+					switch (e0) {
+					case 1:
+						R.registersubs();
+						break;
+					case 2:
+						R.editSubs();
+						break;
+					case 3:
+						System.out.println(" Enter Visitor id");
+						int idvl = input.nextInt();
+						System.out.println(" if you are sure delete sub Enter 1/nelse Enter 2");
+						int idv7 = input.nextInt();
+						if (idv7 == 1) {
+							R.deletesubs(idvl);
+						}
+						break;
+					default:
+						if (e0 != 4) {
+							System.out.println("Wrong entry !\nTry again");
+						}
+						break;
+					}
+				}
+				break;
+			case 4:
+				Visitor vn = new Visitor();
+				vn.book_tour();
+				System.out.println("please Enter your id again");
+				int idb = input.nextInt();
+				if (R.Database().getvisitor(idb).getNum_ofVisit() >= 5) {
+					SeniorVistor S = new SeniorVistor();
+					double price;
+					double DiscountRate = 0.2;
+					S.setDiscountRate(DiscountRate);
+					price = vn.book_tour().getPrice() - (vn.book_tour().getPrice() * S.getDiscountRate());
+					vn.book_tour().setPrice(price);
+					System.out.println("There is a discount 20% for you; because you visited us more than 5 time\n");
+					System.out.println("Your new ticket price is:" + vn.book_tour().getPrice() + "$");
+				}
+				break;
+			default:
+				if (x != 0) {
+					System.out.println("Wrong entry !\nTry again");
+				}
+				break;
+			}
+
+		}
+	}
+}

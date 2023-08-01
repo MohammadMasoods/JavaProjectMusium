@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+
+public class subscriptions  {
+	Visitor v1;
+    Ticket Ty;
+     public subscriptions() {
+		
+	}
+	public Visitor getV1() {
+		return v1;
+	}
+	public void setV1(Visitor v1) {
+		this.v1 = v1;
+	}
+	public Ticket getTy() {
+		return Ty;
+	}
+	public void setTy(Ticket ty) {
+		Ty = ty;
+	}
+	
+	
+
+     
+     
+}

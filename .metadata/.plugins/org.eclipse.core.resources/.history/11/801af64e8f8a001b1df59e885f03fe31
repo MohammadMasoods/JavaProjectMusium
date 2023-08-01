@@ -1,0 +1,53 @@
+import java.util.*;
+
+public class person{
+	public	String name;
+	public	String address;
+	public int ID;
+	public String NumOftelph;
+	Calendar dateOfbirth ;
+  public person () {};
+public person(String name, String address, int iD, String numOftelph, Calendar dateOfbirth) {
+		super();
+		this.name = name;
+		this.address = address;
+		ID = iD;
+		NumOftelph = numOftelph;
+		this.dateOfbirth = dateOfbirth;
+	}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getAddress() {
+	return address;
+}
+public void setAddress(String address) {
+	this.address = address;
+}
+public int getID() {
+	return ID;
+}
+public void setID(int iD) {
+	ID = iD;
+}
+public String getNumOftelph() {
+	return NumOftelph;
+}
+public void setNumOftelph(String numOftelph) {
+	NumOftelph = numOftelph;
+}
+public Date getDateOfbirth() {
+	return dateOfbirth;
+}
+public void setDateOfbirth(Date dateOfbirth) {
+	this.dateOfbirth = dateOfbirth;
+}
+@Override
+public String toString() {
+	return  "]";
+}
+	
+}

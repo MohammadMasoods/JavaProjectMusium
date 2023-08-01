@@ -1,0 +1,21 @@
+
+public class MultiTimeTecket {
+	Tickettype Ttype;
+   char tickitprise;
+   
+public MultiTimeTecket(Tickettype ttype, char tickitprise) {
+	super();
+	
+	ttype.DAILY.prise=30;
+	ttype.MONTHLY.prise=700;
+	ttype.YEARLY.prise=3000;
+	this.tickitprise = tickitprise;
+	Ttype = ttype;
+}
+	
+MultiTimeTecket()
+{
+	
+}
+
+}

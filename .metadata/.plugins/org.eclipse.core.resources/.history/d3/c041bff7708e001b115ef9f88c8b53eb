@@ -1,0 +1,33 @@
+import java.time.LocalDate;
+import java.util.*;
+
+public class SeniorVistor extends Visitor {
+double DiscountRate;
+
+Scanner input = new Scanner(System.in);
+	SeniorVistor(String Name, String address, int ID, String NOT, LocalDate dob, int record_id, int Num_ofVisit) {
+		super(Name, address, ID, NOT, dob, record_id, Num_ofVisit);
+		DiscountRate=0.2;
+	}
+	SeniorVistor(){
+		
+		DiscountRate=0.2;
+		
+	}
+	public double getDiscountRate() {
+		return DiscountRate;
+	}
+	public void setDiscountRate(double discountRate) {
+		DiscountRate = discountRate;
+	}
+	@Override
+	public int book_tour() {
+		// TODO Auto-generated method stub
+		return super.book_tour();
+	}
+	
+
+
+	
+
+}

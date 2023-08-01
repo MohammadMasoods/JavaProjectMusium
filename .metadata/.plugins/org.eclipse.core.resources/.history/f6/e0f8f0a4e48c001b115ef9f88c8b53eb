@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class RegularVistor extends Visitor {
+int Age;
+public int getAge() {
+	return Age;
+}
+
+public void setAge(int age) {
+	Age = age;
+}
+
+public RegularVistor(String Name, String address, int ID, String NOT, Calendar dob, int record_id, int Num_ofVisit,int Age) {
+		super(Name, address, ID, NOT, dob, record_id, Num_ofVisit);
+		setAge( Age);
+	}
+
+void bookTour() {
+	
+}
+}

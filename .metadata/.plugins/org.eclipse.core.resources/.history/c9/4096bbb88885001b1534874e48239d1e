@@ -1,0 +1,71 @@
+
+import java.util.*;
+import java.text.*;
+public class MuseumSystem{
+		
+	public	String name;
+	public	String address;
+	public String description;
+	WorkingDay WD;
+    ArrayList <Employee> Elist;
+    ArrayList <Visitor> Vlist ;
+    ArrayList <Guide> Guideslist= new ArrayList<Guide>();
+	     
+	public MuseumSystem(String name, String address, String description, WorkingDay wD, ArrayList<Employee> elist,
+			ArrayList<Visitor> vlist) {
+		super();
+		this.name = name;
+		this.address = address;
+		this.description = description;
+		WD = wD;
+		Elist = elist;
+		Vlist = vlist;
+	}
+
+
+
+	public ArrayList<Visitor> getVlist() {
+		return Vlist;
+	}
+
+
+
+	public void setVlist(ArrayList<Visitor> vlist) {
+		Vlist = vlist;
+	}
+	public ArrayList<Guide> getGuidelist() {
+		return this.getGuidelist();		
+	
+	}
+	public void setGuidelist(ArrayList<Guide> guideslist) {
+		this.setGuidelist(guideslist);
+		
+	}
+	public ArrayList<Guide> getAvailableguides(Date D){
+	//	WorkingDay wer=WorkingDay.SUNDAY;
+		//Date Ddf=Date.from(null);
+
+		
+		//ArrayList<Guide> G;
+		//G[0]=new Guide("Ahmed", " address", 123,  "NOT", Ddf, Ddf, 528,3,wer);
+		//if(D==Ddf) {
+		//	return G;
+	//	}
+	//	else {return null;}
+		
+		return null;
+	}
+public void addVisitor(Visitor s) {
+	/*Date dNow = new Date( );
+    SimpleDateFormat ft = new SimpleDateFormat ("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
+    
+    ArrayList<Visitor> Contacts = new ArrayList<Visitor>();
+    MuseumSystem objt = new MuseumSystem();
+   Contacts.add(objt.Vlist("name", "address", 12,"NUM",dNow,23,123));
+	*/
+}
+public void addGuide() {
+	
+	
+}
+	}

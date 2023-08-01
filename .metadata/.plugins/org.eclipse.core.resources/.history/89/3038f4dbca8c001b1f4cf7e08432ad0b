@@ -1,0 +1,12 @@
+
+public class OneTimeTecket {
+
+     char prise;
+
+	public OneTimeTecket(char prise) {
+		
+		this.prise = prise;
+	}
+     
+	
+}

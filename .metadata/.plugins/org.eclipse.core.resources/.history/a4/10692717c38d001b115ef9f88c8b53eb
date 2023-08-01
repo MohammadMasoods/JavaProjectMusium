@@ -1,0 +1,12 @@
+
+public class OneTimeTecket extends Ticket {
+
+     char prise;
+
+	public OneTimeTecket(char prise) {
+		
+		this.prise = 20;
+	}
+     
+	
+}

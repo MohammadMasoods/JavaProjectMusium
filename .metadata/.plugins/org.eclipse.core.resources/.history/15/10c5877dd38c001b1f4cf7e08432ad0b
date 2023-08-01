@@ -1,0 +1,15 @@
+
+public enum WorkingDay {
+	
+	
+	SUNDAY , MONDAY,TUSEDAY  ,WEDNESDAY, THURSDAY;
+
+	  
+
+	WorkingDay() {
+		
+		
+	}
+	
+	
+}

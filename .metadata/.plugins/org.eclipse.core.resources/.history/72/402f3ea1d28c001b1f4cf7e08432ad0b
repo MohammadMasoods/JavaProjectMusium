@@ -1,0 +1,59 @@
+import java.util.*;
+
+public class SeniorVistor extends Visitor {
+double DiscountRate;
+
+Scanner input = new Scanner(System.in);
+	SeniorVistor(String Name, String address, int ID, String NOT, Calendar dob, int record_id, int Num_ofVisit) {
+		super(Name, address, ID, NOT, dob, record_id, Num_ofVisit);
+		DiscountRate=0.2;
+	}
+	SeniorVistor(){
+		
+		
+		
+	}
+	public double getDiscountRate() {
+		return DiscountRate;
+	}
+	public void setDiscountRate(double discountRate) {
+		DiscountRate = discountRate;
+	}
+
+void booktoure() {
+	System.out.println("Welcome Please answer the following questions: \nIf ِare you  visitor Enter 1\n2.else if are you Regular visitor Enter 2");
+	int e3 = input.nextInt();
+	if(e3==1) {
+		System.out.println("Enter the date on which you want to take the tour (year,month,day)");
+		Calendar Dh=Calendar.getInstance();
+		Dh.set(input.nextInt(),input.nextInt(),input.nextInt());
+		System.out.println("if you want a tour with guide enter 1\nif you want  Tour without guide enter 2");
+		int e4 = input.nextInt();
+		if(e4==1) {
+			System.out.println("guides available at date You have chosen");
+			MuseumSystem M=new MuseumSystem();
+			
+			  for (Guide p1 : M.Guideslist)
+				  
+			    { 
+				  System.out.println(M.getAvailableguides(Dh).toString());	
+					
+					
+			    }
+			
+			System.out.println("Enter guide's id who you are chosen");
+			int e5 = input.nextInt();
+			
+			System.out.println("A guided tour has been booked for you\r\n"
+					+ "Now you will return to the home page to issue a ticket");
+		}
+		else if(e4==2) {
+			
+			
+		}
+	}
+	else {
+		
+	}
+}
+}

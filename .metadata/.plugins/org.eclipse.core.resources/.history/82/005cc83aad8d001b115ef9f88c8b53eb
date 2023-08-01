@@ -1,0 +1,22 @@
+import java.util.Date;
+
+public class MultiTimeTecket extends Ticket {
+	Tickettype Ttype;
+	double price;
+ MultiTimeTecket(int ticket_id, double price, Date issue_date, String NotH) {
+	super(ticket_id, price, issue_date, NotH);
+}
+
+
+
+
+MultiTimeTecket()
+{
+	Ttype.WEEKLY.setPrise(100);
+	Ttype.MONTHLY.setPrise(350);
+	Ttype.YEARLY.setPrise(3000);
+	
+	
+}
+
+}

@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+import java.util.Date;
+
+public class Guide extends Employee{
+int M_tour_perday;
+WorkingDay wh_g;
+
+	Guide(String Name, String address, int ID, String NOT, Date dob, Date hire, int employee_id,int toursperday,WorkingDay wh) {
+		super(Name, address, ID, NOT, dob, hire, employee_id);
+	this.M_tour_perday=toursperday;
+	this.wh_g=wh;
+	}
+
+	public int getM_tour_perday() {
+		return M_tour_perday;
+	}
+
+	public void setM_tour_perday(int m_tour_perday) {
+		M_tour_perday = m_tour_perday;
+	}
+
+	public WorkingDay getWh_g() {
+		return wh_g;
+	}
+
+	public void setWh_g(WorkingDay wh_g) {
+		this.wh_g = wh_g;
+	}
+	ArrayList <Languages> getLanguges(){
+		return this.getLanguges();
+
+	}
+	 public void set_Languages (ArrayList <Languages> grecord) {
+		
+		this.set_Languages(grecord);
+	}
+	
+}

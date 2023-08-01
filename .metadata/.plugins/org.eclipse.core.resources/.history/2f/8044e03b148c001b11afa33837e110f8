@@ -1,0 +1,15 @@
+import java.util.*;
+public class VisitorRecord {
+Date enteringdate;
+Date enteringtime;
+
+public VisitorRecord(Date enteringdate, Date enteringtime) {
+	super();
+	this.enteringdate = enteringdate;
+	this.enteringtime = enteringtime;
+}
+VisitorRecord(){
+	
+	
+} 
+}

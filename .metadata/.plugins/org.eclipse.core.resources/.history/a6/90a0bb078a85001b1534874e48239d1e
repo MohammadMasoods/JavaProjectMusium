@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+import java.util.Date;
+
+public class Employee extends person{
+	 Employee(String Name, String address, int ID, String NOT, Date dob,Date hire ,int employee_id) {
+		super(Name, address, ID, NOT, dob);
+		this.employee_id=employee_id;
+		this.hire_Date=hire;
+	}
+	Date hire_Date;
+	 int employee_id;
+	
+	
+	public Date getHire_Date() {
+		return hire_Date;
+	}
+	public void setHire_Date(Date hire_Date) {
+		this.hire_Date = hire_Date;
+	}
+	public int getEmployee_id() {
+		return employee_id;
+	}
+	public void setEmployee_id(int employee_id) {
+		this.employee_id = employee_id;
+	}
+	@Override
+	public String toString() {
+		return null;
+	}
+	 
+	
+}
